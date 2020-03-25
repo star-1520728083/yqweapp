@@ -1,0 +1,24 @@
+.container .van-nav-bar {
+  padding-top: 0px!important;
+  background-color: #5bb7f6;
+  color:#ffffff;
+  font-weight: 600;
+  font-size: 22px;
+}
+.login-container {
+  padding-top: 50rpx;
+}
+.login-btn .van-button--mini {
+  width: 100rpx!important;
+}
+.login-footer-btn{
+  margin-top: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.login-footer-btn button {
+  background-color: #5bb7f6;
+  font-size: 18px;
+}

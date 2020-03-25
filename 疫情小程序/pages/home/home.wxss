@@ -1,0 +1,22 @@
+/* pages/home/home.wxss */
+.home image {
+  width: 100%;
+}
+.home-grid {
+  height: 150rpx;
+  display: flex;
+  flex-direction: row;
+}
+.home-grid-item {
+  flex: 1;
+}
+.item-icon, .item-text{
+  display: flex;
+  margin-top: 10rpx;
+  justify-content: center;
+  align-items: center;
+}
+.home-grid image{
+  height: 100rpx;
+  width: 100rpx;
+}

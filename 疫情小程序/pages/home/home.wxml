@@ -1,0 +1,18 @@
+<view class="home">
+  <image src="../../static/images/commonly/hd-bg.png"></image>
+  <view class="home-grid">
+     <view class="home-grid-item" 
+      wx:for="{{images}}" 
+      wx:key="index" 
+      data-item='{{item}}'
+      bindtap="handleClick"
+     >
+        <view class="item-icon">
+          <image src="{{item.url}}"></image>
+        </view>
+        <view class="item-text">
+           <text>{{item.text}}</text>
+        </view>
+     </view>
+  </view>
+</view>

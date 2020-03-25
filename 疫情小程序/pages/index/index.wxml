@@ -1,0 +1,36 @@
+<!--index.wxml-->
+<view class="container">
+  <van-nav-bar
+    title="用户登录"
+    left-text=""
+    right-text=""
+    bind:click-left="onClickLeft"
+    bind:click-right="onClickRight"
+  />
+    <view class="login-container">
+      <van-field
+        value="{{ phone }}"
+        clearable
+        type="number"
+        label="用户名"
+        error-message="{{errphone}}"
+        bind:change="onChangePhone"
+        placeholder="请输入手机号"
+      />
+      <van-field
+        value="{{ sms }}"
+        error-message="{{errsms}}"
+        type="number"
+        clearable
+        label="短信验证码"
+        bind:change="onChangeNumber"
+        placeholder="请输入短信验证码"
+        use-button-slot
+      >
+        <van-button class="login-btn" slot="button" size="mini" type="primary" bindtap="getCode">发送验证码</van-button>
+      </van-field>
+      <view class="login-footer-btn">
+        <van-button bindtap="getLogin" type="info" size="normal">登录</van-button>
+      </view>
+    </view>
+</view>
